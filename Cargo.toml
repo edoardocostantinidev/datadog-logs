@@ -20,8 +20,9 @@ with-tokio = ["tokio", "nonblocking"]
 
 [dependencies]
 # non optional
-attohttpc = { version = "0.25", defaut-features = false, features = [
+attohttpc = { version = "0.25", default-features = false, features = [
   "compress",
+  "rustls",
   "tls-rustls",
 ] }
 flume = { version = "0.10.0" }
